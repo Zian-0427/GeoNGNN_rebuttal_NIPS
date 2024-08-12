@@ -20,7 +20,7 @@ parser.add_argument("--model", choices=["GeoNGNN"], default="GeoNGNN")
 parser.add_argument("--ds", choices=["qm9"], default="qm9")
 parser.add_argument("--dname", default="4")
 parser.add_argument("--devices", nargs="+", type=int, default=None)
-parser.add_argument("--data_dir", default="/home/lizian/datasets/QM9")
+parser.add_argument("--data_dir", default="~/datasets/QM9")
 parser.add_argument("--version", default="NO_VERSION")
 parser.add_argument("--resume", action="store_true")
 parser.add_argument("--skip_train", action="store_true")
@@ -63,8 +63,8 @@ elif devices == [-1]:
 '''
     get hparams
 '''
-config_path = "/home/lizian/GeoNGNN/GeoNGNN_github/hparams/{}_{}.yaml".format(model_name, dataset_name)
-specific_config_path = "/home/lizian/GeoNGNN/GeoNGNN_github/hparams/specific/{}_{}_specific.yaml".format(model_name, dataset_name)
+config_path = "~/GeoNGNN/GeoNGNN_github/hparams/{}_{}.yaml".format(model_name, dataset_name)
+specific_config_path = "~/GeoNGNN/GeoNGNN_github/hparams/specific/{}_{}_specific.yaml".format(model_name, dataset_name)
 if not os.path.exists(specific_config_path):
     specific_config_path = None
 config = get_cfgs(config_path, merge_list, specific_config_path, data_name)
