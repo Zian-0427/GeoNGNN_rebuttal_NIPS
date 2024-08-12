@@ -1,0 +1,57 @@
+# --- start: DisGNN specific config ---
+# Ac:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 6
+
+# DHA:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 6
+
+# AT:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 6
+
+# St:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 6
+
+# ATCG:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 6
+
+# Bu:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 6
+
+# Do:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 6
+#     C_power: 1.5
+
+# --- end: DisGNN specific config ---
+
+
+# --- start: GeoNGNN specific config ---
+
+ATCG:
+  optimizer_config:
+    force_ratio: 0.99
+
+AT:
+  optimizer_config:
+    force_ratio: 0.99
+
+Do:
+  model_config:
+    C_power: 1.
+  data_config:
+    train_batch_size: 2
+
+# --- end: GeoNGNN specific config ---

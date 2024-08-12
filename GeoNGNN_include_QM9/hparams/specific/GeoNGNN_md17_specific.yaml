@@ -1,0 +1,57 @@
+# --- start: DisGNN specific config ---
+
+# revised aspirin:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+
+# revised benzene:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+#     C_power: 1.
+
+# revised uracil:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+
+# revised napthalene:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+
+# revised salicylic acid:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+
+# revised malonaldehyde:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+
+# revised ethanol:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+
+# revised toluene:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+#     C_power: 1.
+
+# revised paracetamol:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+
+# revised azobenzene:
+#   model_config:
+#     ablation_innerGNN: true
+#     outer_layer_num: 7
+
+
+# --- end: DisGNN specific config ---
+
