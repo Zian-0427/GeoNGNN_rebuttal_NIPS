@@ -63,8 +63,8 @@ elif devices == [-1]:
 '''
     get hparams
 '''
-config_path = "~/GeoNGNN/GeoNGNN_github/hparams/{}_{}.yaml".format(model_name, dataset_name)
-specific_config_path = "~/GeoNGNN/GeoNGNN_github/hparams/specific/{}_{}_specific.yaml".format(model_name, dataset_name)
+config_path = "./hparams/{}_{}.yaml".format(model_name, dataset_name)
+specific_config_path = "./hparams/specific/{}_{}_specific.yaml".format(model_name, dataset_name)
 if not os.path.exists(specific_config_path):
     specific_config_path = None
 config = get_cfgs(config_path, merge_list, specific_config_path, data_name)
